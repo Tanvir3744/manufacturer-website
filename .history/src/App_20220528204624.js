@@ -1,10 +1,9 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom'
-import Navbar from './Pages/Shared/Navbar';
+import {Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <h1>this is assignment</h1>
     </div>
   );
 }
