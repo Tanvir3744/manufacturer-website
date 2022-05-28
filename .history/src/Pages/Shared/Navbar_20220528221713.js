@@ -16,11 +16,10 @@ const Navbar = () => {
     //menu items stored here
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
         <li><Link to="/myorder">My Orders</Link></li>
         <li><Link to="/addreview">Add A Review</Link></li>
         <li><Link to="/profile">My Profile</Link></li>
-        <li><Link to="/dashboard">Dashboard</Link></li>
+        <li><Link to="/contact">Contact Us</Link></li>
         <li>{user ? <button onClick={logout} className='text-white btn btn-primary bg-gradient-to-r from-secondary to-primary'>{user.displayName}</button> : <Link to="/login">Log in </Link>} </li> 
     </>
     console.log(user)

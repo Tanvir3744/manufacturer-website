@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
 import { useSignInWithGoogle, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
-import Loading from '../../Components/Loading';
+import Loading from './Loading';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 const Login = () => {

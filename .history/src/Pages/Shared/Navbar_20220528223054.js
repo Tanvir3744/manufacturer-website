@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><Link to="/addreview">Add A Review</Link></li>
         <li><Link to="/profile">My Profile</Link></li>
         <li><Link to="/dashboard">Dashboard</Link></li>
-        <li>{user ? <button onClick={logout} className='text-white btn btn-primary bg-gradient-to-r from-secondary to-primary'>{user.displayName}</button> : <Link to="/login">Log in </Link>} </li> 
+        <li>{user ? <button onClick={logout} className='text-white btn btn-neutral bg-gradient-to-r from-secondary to-primary'>{user.displayName}</button> : <Link to="/login">Log in </Link>} </li> 
     </>
     console.log(user)
     return (

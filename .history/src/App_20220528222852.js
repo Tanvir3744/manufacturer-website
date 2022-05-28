@@ -8,7 +8,6 @@ import AddReview from './Pages/AddReview/AddReview';
 import Profile from './Pages/Profile/Profile';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Login from './Pages/Login/Login';
-import Register from './Pages/Login/Register';
 function App() {
   return (
     <div className="App">
@@ -21,8 +20,7 @@ function App() {
         <Route path='/addreview' element={<AddReview />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login/>}/>
       </Routes>
     </div>
   );
