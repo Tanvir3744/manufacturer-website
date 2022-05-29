@@ -1,0 +1,34 @@
+[
+    {
+        "_id" :1,
+        "name" : "Wheel Ring",
+        "available_quantity": 700,
+        "img":"https://demo.wpthemego.com/themes/sw_autusin/demo6/wp-content/uploads/2017/09/12-2.jpg",
+        "description": "world class wheel ring we have made",
+        "price":10000
+    },
+    {
+        "_id" :2,
+        "name" : "Air Filter",
+        "available_quantity": 500,
+        "img":"https://demo.wpthemego.com/themes/sw_autusin/demo6/wp-content/uploads/2017/09/17-1.jpg",
+        "description": "world class air filter we have made",
+        "price":10000
+    },
+    {
+        "_id" :3,
+        "name" : "Head Light",
+        "available_quantity": 900,
+        "img":"https://demo.wpthemego.com/themes/sw_autusin/demo6/wp-content/uploads/2017/09/15-2.jpg",
+        "description": "best quality headligt ever",
+        "price":10000
+    },
+    {
+        "_id" :4,
+        "name" : "Head Light",
+        "available_quantity": 900,
+        "img":"https://demo.wpthemego.com/themes/sw_autusin/demo6/wp-content/uploads/2017/09/4-2.jpg",
+        "description": "best quality headligt ever",
+        "price":10000
+    }
+]
