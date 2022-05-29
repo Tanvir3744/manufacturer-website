@@ -20,7 +20,6 @@ const MyOrders = () => {
                     <table class="table table-compact w-full">
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Product Name</th>
@@ -32,9 +31,8 @@ const MyOrders = () => {
                         </thead>
                         <tbody>
                             {
-                                orders.map((order, index) =>
+                                orders.map(order =>
                                     <tr>
-                                        <td>{index + 1}</td>
                                         <td>{user.displayName}</td>
                                         <td>{order.email}</td>
                                         <td>{order.product}</td>

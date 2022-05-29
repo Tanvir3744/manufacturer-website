@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 const MyOrders = () => {
     const [user] = useAuthState(auth)
     const [orders, setOrders] = useState([])
+    console.log(orders)
     useEffect(() => {
         const url = `http://localhost:5000/orders?email=${ user.email }`;
         fetch(url)
@@ -15,12 +16,10 @@ const MyOrders = () => {
     return (
         <div>
             <div>
-                <h2 className='text-2xl font-semibold text-accent p-2 capitalize'>{user.displayName || ""} you can manage your order from here</h2>
                 <div class="overflow-x-auto">
                     <table class="table table-compact w-full">
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Product Name</th>
@@ -32,17 +31,15 @@ const MyOrders = () => {
                         </thead>
                         <tbody>
                             {
-                                orders.map((order, index) =>
-                                    <tr>
-                                        <td>{index + 1}</td>
-                                        <td>{user.displayName}</td>
-                                        <td>{order.email}</td>
-                                        <td>{order.product}</td>
-                                        <td>{order.address}</td>
-                                        <td>{order.quantity}</td>
-                                        <td>{order.phone}</td>
-                                        <td><button className="btn btn-neutral">Delete</button></td>
-                                    </tr>)
+                                orders.map(order => <tr>
+                                    <td>{user.displayName}</td>
+                                    <td>{orders.email}</td>
+                                    <td>{orders.name}</td>
+                                    <td>{orders.address}</td>
+                                    <td>{orders.quantity}</td>
+                                    <td>{orders.phone}</td>
+                                    <td><button className="btn btn-neutral">Delete</button></td>
+                                </tr>)
                             }
                         </tbody>
                     </table>

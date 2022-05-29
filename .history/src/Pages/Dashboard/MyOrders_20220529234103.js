@@ -15,12 +15,11 @@ const MyOrders = () => {
     return (
         <div>
             <div>
-                <h2 className='text-2xl font-semibold text-accent p-2 capitalize'>{user.displayName || ""} you can manage your order from here</h2>
+                <h2 className='text-2xl font-semibold text-secondary'>{user.displayName || ""} you can manage your order from here</h2>
                 <div class="overflow-x-auto">
                     <table class="table table-compact w-full">
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Product Name</th>
@@ -32,9 +31,8 @@ const MyOrders = () => {
                         </thead>
                         <tbody>
                             {
-                                orders.map((order, index) =>
+                                orders.map(order =>
                                     <tr>
-                                        <td>{index + 1}</td>
                                         <td>{user.displayName}</td>
                                         <td>{order.email}</td>
                                         <td>{order.product}</td>
