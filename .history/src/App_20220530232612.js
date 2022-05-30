@@ -22,7 +22,6 @@ import AddReview from './Pages/Dashboard/AddReview'
 import NotFound from './Components/NotFound';
 import Blogs from './Components/Blogs';
 import ManageUser from './Pages/Dashboard/ManageUser';
-import PortFolio from './Components/PortFolio';
 
 function App() {
   return (
@@ -43,13 +42,13 @@ function App() {
           <Route path='addProduct' element={<AddProduct></AddProduct>}></Route>
           <Route path='manageProduct' element={<ManageProduct></ManageProduct>}></Route>
           <Route path='manageuser' element={<ManageUser></ManageUser>}></Route>
-          <Route path='portfolio' element={<PortFolio />}></Route>
+          <Route path='portfolio' element={<ManageUser></ManageUser>}></Route>
           <Route path='makeAdmin' element={<MakeAdmin></MakeAdmin>}></Route>
         </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/details/:id' element={<RequireAuth><Details /></RequireAuth>} />
-        <Route path='*' element={<NotFound />}></Route>
+        <Route path='*' element={<NotFound/>}></Route>
       </Routes>
       <Footer />
       <ToastContainer />
