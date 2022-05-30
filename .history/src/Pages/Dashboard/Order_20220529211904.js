@@ -6,7 +6,7 @@ const Order = () => {
     const [orders, setOrders] = useState({})
     const [user] = useAuthState(auth)
     useEffect(() => {
-        const url = `http://localhost:5000/orders?email=${user.email}`
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/orders?email=${user.email}`
     },[])
     return (
         <div>

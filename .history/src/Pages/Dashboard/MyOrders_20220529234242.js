@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth)
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5000/orders?email=${ user.email }`;
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/orders?email=${ user.email }`;
         fetch(url)
             .then(response => response.json())
             .then(data => setOrders(data))

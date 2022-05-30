@@ -5,7 +5,7 @@ import auth from '../../firebase.init';
 const MyOrders = () => {
     const [user] = useAuthState(auth)
     useEffect(() => {
-        const url = `http://localhost:5000/orders?email=${email}`;
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/orders?email=${email}`;
     },[user])
     return (
         <div>

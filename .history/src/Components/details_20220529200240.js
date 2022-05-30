@@ -38,7 +38,7 @@ const Details = () => {
 
         console.log(name, email, product, address, phone, quantity)
 
-        const url = `http://localhost:5000/orders`;
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/orders`;
         fetch(url, {
             method: 'POST',
             headers: {

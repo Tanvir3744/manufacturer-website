@@ -5,7 +5,7 @@ const useToken = (user) => {
     useEffect(() => {
         const user = user?.user?.email;
         const currentUser = { user: user };
-        const url = `http://localhost:5000/user${email}`;
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/user${email}`;
     
     }, [user])
     return [token]
