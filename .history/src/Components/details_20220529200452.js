@@ -11,7 +11,7 @@ const Details = () => {
 
     const [productDetail, setProductDetail] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/product/${ id }`
+        const url = `https://fathomless-scrubland-15745.herokuapp.com/products/${ id }`
         fetch(url)
             .then(response => response.json())
             .then(data => setProductDetail(data));
@@ -52,7 +52,7 @@ const Details = () => {
                 toast('order placed successfully')
             })
 
-        fetch(`http://localhost:5000/product/${ id }`, {
+        fetch(`https://fathomless-scrubland-15745.herokuapp.com/products/${ id }`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
